@@ -8,7 +8,8 @@ import {
   Route  
 } from "react-router-dom";
 import './App.css';
-//import Encabezado from './components/Encabezado';
+import Encabezado from './components/Encabezado';
+import BotonConsultar from './components/BotonConsultar';
 import Menu from './components/Menu.js';
 import Registrar from './components/Registrar.js';
 import Consultar from './components/Consultar';
@@ -17,23 +18,25 @@ import Matricular from './components/Matricular';
 class App extends React.Component {
   render(){
     return (
-      //<div className="App">
-      //<Encabezado/>
-      //</div>
-      <Router>
-        <Menu/>
-        <Switch>
-          <Route path="/Registrar">
-            <Registrar/>
-          </Route>
-          <Route path="/Consultar">
-            <Consultar/>
-          </Route>
-          <Route path="/Matricular">
-            <Matricular/>
-          </Route>
-        </Switch>
-      </Router>
+      <div className="App">
+        <Encabezado></Encabezado>
+        <BotonConsultar></BotonConsultar>              
+              
+        <Router>
+          <Menu/>
+          <Switch>
+            <Route path="/Registrar">
+              <Registrar/>
+            </Route>
+            <Route path="/Consultar">
+              <Consultar/>
+            </Route>
+            <Route path="/Matricular">
+              <Matricular/>
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     );
   }
 }

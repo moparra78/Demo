@@ -8,7 +8,7 @@ class Menu extends React.Component {
       return <nav>
       <ul class="nav">
         <li class="nav-item">
-          <Link to="/Registrar" class="nav-link">Registrar</Link>
+          <Link to="/Registrar" class="nav-link">Registrar</Link>          
         </li>
         <li class="nav-item">
           <Link to="/Consultar" class="nav-link">Consultar</Link>
@@ -20,5 +20,7 @@ class Menu extends React.Component {
     </nav>;
   }
 }
+
+//<button type="button" onClick="/Registrar">Registrar</button>          
 
 export default Menu;

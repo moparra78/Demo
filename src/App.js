@@ -7,9 +7,9 @@ import {
   Switch,
   Route  
 } from "react-router-dom";
-import './App.css';
+
 import Encabezado from './components/Encabezado';
-import BotonConsultar from './components/BotonConsultar';
+//import BotonConsultar from './components/BotonConsultar';
 import Menu from './components/Menu.js';
 import Registrar from './components/Registrar.js';
 import Consultar from './components/Consultar';
@@ -19,8 +19,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Encabezado></Encabezado>
-        <BotonConsultar></BotonConsultar>              
+        <Encabezado></Encabezado>             
               
         <Router>
           <Menu/>
